@@ -1,5 +1,7 @@
 # BazDebugWindow
 
+**STILL ACTIVE in 2026**
+
 **NEW 2025/05/12**
 
 - _debugWindow.pas now references an include file: bazDebugWindow.inc
