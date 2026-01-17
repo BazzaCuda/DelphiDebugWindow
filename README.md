@@ -25,11 +25,11 @@ TDebug.debugEnum<T>()
 allowing you to pass a variable of any enumerated type and have its value reported:
 ``` Delphi
     type
-         TMediaType = (mtAudio, mtVideo);
+         TMediaType = (mtAudio, mtVideo, mtImage);
     var            
          FMediaType: TMediaType;
     begin
-         FMediaType := mtAudio;
+         FMediaType := mtimage;
          TDebug.debugEnum<TMediaType>('FMediaType', FMediaType);
     end;
 ```
