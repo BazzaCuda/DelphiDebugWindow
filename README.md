@@ -1,5 +1,7 @@
 # BazDebugWindow
 
+**STILL ACTIVE in 2026**
+
 **NEW 2025/05/12**
 
 - _debugWindow.pas now references an include file: bazDebugWindow.inc
@@ -23,11 +25,11 @@ TDebug.debugEnum<T>()
 allowing you to pass a variable of any enumerated type and have its value reported:
 ``` Delphi
     type
-         TMediaType = (mtAudio, mtVideo);
+         TMediaType = (mtAudio, mtVideo, mtImage);
     var            
          FMediaType: TMediaType;
     begin
-         FMediaType := mtAudio;
+         FMediaType := mtimage;
          TDebug.debugEnum<TMediaType>('FMediaType', FMediaType);
     end;
 ```
@@ -35,7 +37,9 @@ allowing you to pass a variable of any enumerated type and have its value report
 
 BazDebugWindow is a reworking of the original DebugWindow by GExperts, renamed as per their licensing requirements.
 
-A very useful tool for Delphi developers - say "goodbye" to all those `ShowMessage(...)` calls while trying to debug your program.
+A very useful tool for Delphi* developers - say "goodbye" to all those `ShowMessage(...)` calls while trying to debug your program.
+
+\* _and probably Lazarus/Free Pascal developers, too, although I haven't tested it with such_
 
 ![BazDebugWindow](https://github.com/BazzaCuda/BazDebugWindow/assets/22550919/8beab9d4-c578-4ab5-8d58-500f7d847769)
 
