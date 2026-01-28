@@ -274,6 +274,9 @@ end;
 
 procedure TfmDebug.FormCreate(Sender: TObject); // BAZ
 begin
+// Force the working directory to the EXE folder to prevent handle leaks
+  setCurrentDir(extractFilePath(paramStr(0)));
+
   popupMode   := pmExplicit;
   borderIcons := [biSystemMenu];
   setWindowPosBottomRight;
