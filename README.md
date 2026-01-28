@@ -7,7 +7,7 @@
 - _debugWindow.pas now references an include file: bazDebugWindow.inc
 - The .inc file defines `const BazDebugWindow = TRUE;` or `const BazDebugWindow = FALSE;`
 - This enables or disables the definition of the procedures in _debugWindow.pas
-- Your project should have its own individual copy of bazDebugWindow.inc
+- Each project should have its own individual copy of bazDebugWindow.inc
 - Drag and Drop the file onto the Project Explorer in the Delphi IDE to make it visible to the code
 - In each project, you can now make calls to the debug procedures conditional at compile time based on the TRUE/FALSE value of the const:
    ``` Delphi
